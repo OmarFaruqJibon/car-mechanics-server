@@ -7,7 +7,7 @@ const cors = require('cors');
 const ObjectId = require('mongodb').ObjectId;
 
 const app = express();
-const port = 5001;
+const PORT = 8000;
 
 app.use(cors());
 app.use(express.json());
@@ -55,22 +55,6 @@ async function run() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      
     } finally {
     //   await client.close();
     }
@@ -79,12 +63,10 @@ async function run() {
 
 
 
-
-
 app.get('/', (req, res) => {
-    res.send("Running my Car Machanics Server");
+    res.send("Running Car Machanics Server");
 })
 
-app.listen(port, ()=>{
-    console.log('Running server on port: ', port);
+app.listen(PORT, ()=>{
+    console.log('Running server on PORT: ', PORT);
 });
