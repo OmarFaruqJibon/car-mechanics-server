@@ -7,7 +7,7 @@ const cors = require('cors');
 const ObjectId = require('mongodb').ObjectId;
 
 const app = express();
-const PORT = `0.0.0.0:$PORT`;
+const PORT = '0.0.0.0:$PORT';
 
 app.use(cors());
 app.use(express.json());
